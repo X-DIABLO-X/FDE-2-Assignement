@@ -1,0 +1,48 @@
+{
+  "batch_id": "BATCH-20260925-124126",
+  "ingested_at": "2026-09-25T12:41:26.710746Z",
+  "sources": {
+    "sql_orders": {
+      "retrieval_mode": "SQL_RDBMS_QUERY",
+      "source_file": "data/raw\\orders_platform.db",
+      "checksum_sha256": "7cfcbcf76a3aba34acca69f8d6db400cde013f0ce20f1cb380223880204cd202",
+      "extracted_rows": {
+        "orders": 6000,
+        "merchants": 15,
+        "line_items": 12044
+      }
+    },
+    "api_dispatch": {
+      "retrieval_mode": "REST_API_PAGINATED_JSON",
+      "source_file": "data/raw\\dispatch_telemetry_stream.json",
+      "checksum_sha256": "ba4a5f76cd1b555c89794564a7a1d8916f4fb01efd1c3d892465bf48c055721e",
+      "extracted_rows": 7211
+    },
+    "csv_kds": {
+      "retrieval_mode": "CSV_BATCH_FILE",
+      "source_file": "data/raw\\kds_merchant_prep.csv",
+      "checksum_sha256": "e1aace0ac466192aa285e5369124655bbd822a6d41e5db8f23b5e019d8119312",
+      "extracted_rows": 6000
+    },
+    "support_tickets": {
+      "retrieval_mode": "JSON_EXPORT",
+      "source_file": "data/raw\\customer_support_tickets.json",
+      "checksum_sha256": "1502d6b4a8b5c751ee62616cc31dd8d4d5df321598f6e0b2236caea6bcbeed65",
+      "extracted_rows": 1497
+    }
+  },
+  "control_totals": {
+    "gmv_subtotal_cents": 23140685,
+    "total_delivery_fee_cents": 2687500,
+    "total_tips_cents": 1090300,
+    "total_gross_captured_cents": 26918485,
+    "line_items_reconciliation_delta_cents": 0,
+    "primary_key_integrity": {
+      "orders_unique": true,
+      "line_items_unique": true,
+      "dispatch_unique": true,
+      "kds_unique": true
+    }
+  },
+  "completeness_verified": true
+}

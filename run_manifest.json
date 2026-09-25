@@ -1,0 +1,40 @@
+{
+  "run_id": "FDE-RUN-20260925-124105",
+  "pipeline_version": "1.0.0",
+  "batch_date": "2026-09-25",
+  "started_at": "2026-09-25T12:41:05.489585Z",
+  "steps": {
+    "step0_generation": "EXISTING_PRESERVED",
+    "step1_ingest": {
+      "batch_id": "BATCH-20260925-124105",
+      "completeness_verified": true,
+      "gmv_control_total_cents": 23140685
+    },
+    "step2_validate": {
+      "total_evaluated": 6000,
+      "clean_records": 5988,
+      "quarantined_records": 12,
+      "quarantine_rate_pct": 0.2,
+      "clock_drift_calibrations": 912,
+      "bump_bar_imputations": 238,
+      "network_jitter_clamps": 213
+    },
+    "step3_workflow_model": {
+      "completed_orders": 5701,
+      "cancelled_orders": 287,
+      "primary_bottleneck": "RIDER_WAIT_AT_STORE"
+    },
+    "step4_gold_marts": {
+      "p50_otd_min": 37.67,
+      "p90_otd_min": 54.43,
+      "sla_breach_rate_pct": 56.43,
+      "staged_dispatch_p90_sim_min": 33.6
+    },
+    "step5_reporting": "EXPORTED"
+  },
+  "status": "SUCCESS",
+  "quarantine_trip_warning": false,
+  "errors": [],
+  "completed_at": "2026-09-25T12:41:06.712567Z",
+  "duration_seconds": 1.22
+}

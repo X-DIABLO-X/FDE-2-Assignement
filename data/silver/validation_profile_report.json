@@ -1,0 +1,31 @@
+{
+  "validation_timestamp": "2026-09-25T12:41:25.721009Z",
+  "profiling_summary": {
+    "total_orders": 6000,
+    "completed_orders": 5713,
+    "cancelled_orders": 287,
+    "total_dispatch_attempts": 7211,
+    "unique_dispatched_orders": 6000,
+    "total_kds_tickets": 6000,
+    "missing_kds_food_ready_count": 244,
+    "missing_kds_food_ready_pct": 4.07,
+    "orders_with_driver_churn": 911,
+    "driver_churn_order_pct": 15.18
+  },
+  "anomaly_detections": {
+    "pos_clock_drift_instances": 914,
+    "missing_bump_bar_instances": 239,
+    "network_jitter_instances": 225,
+    "quarantined_records_count": 12
+  },
+  "calibration_audit": {
+    "clock_drift_calibrated_count": 912,
+    "food_ready_imputed_count": 238,
+    "network_jitter_clamped_count": 213
+  },
+  "quarantine_summary": {
+    "quarantine_file": "data/quarantine\\quarantine_audit.parquet",
+    "total_quarantined": 12,
+    "clean_records_passed_to_silver": 5988
+  }
+}
