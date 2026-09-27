@@ -243,9 +243,12 @@ python generate_pdf.py
 │   ├── silver/                     # Calibrated, state-machine reconstructed tables
 │   ├── gold/                       # Executive KPI marts & intervention simulations
 │   └── quarantine/                 # Isolated dead-letter queue (quarantine_audit.parquet)
-├── FlashEats_Class5_Student.ipynb  # Class 5: Data Retrieval, APIs & Immutability (Solved & Executed)
-├── FlashEats_Class6_Student.ipynb  # Class 6: Data Profiling, Validation & Contracts (Solved & Executed)
-├── FlashEats_Class7_Challenge.ipynb# Class 7: Canonical Modeling & KPI Linkage (Solved & Executed)
+├── in-class-assignments/           # Directory containing all solved & executed classroom notebooks
+│   ├── FlashEats_Class5_Student.ipynb  # Class 5: Ingestion, APIs & Completeness Proofs
+│   ├── FlashEats_Class6_Student.ipynb  # Class 6: Profiling, Contracts & Metric Sensitivity
+│   ├── FlashEats_Class7_Challenge.ipynb# Class 7: Lifecycle Modeling & KPI Linkage
+│   ├── walkthrough.ipynb               # Full interactive pipeline walkthrough
+│   └── README.md                       # Documentation for student notebooks
 ├── database/flasheats.db           # SQLite Classroom Operational Database
 ├── api/mock_dispatch_api.py        # Mock Dispatch API Server
 ├── docs/
@@ -268,11 +271,12 @@ python generate_pdf.py
 
 ## 11. Classroom Pack & Solved Student Notebooks
 
-In addition to the production-grade pipeline, this repository contains the complete, executed, and verified solutions for the FlashEats Classroom Pack:
+In addition to the production-grade pipeline, this repository contains the complete, executed, and verified solutions for the FlashEats Classroom Pack stored in [`in-class-assignments/`](in-class-assignments/) (also mirrored in [`in-class-assiggments/`](in-class-assiggments/) for compatibility):
 
 | Notebook | Focus & FDE Concepts Covered | Execution Status |
 | :--- | :--- | :--- |
-| [`FlashEats_Class5_Student.ipynb`](FlashEats_Class5_Student.ipynb) | Data retrieval, SQLite extraction, API pagination with cursors, saving immutable bronze raw JSON pages, and proving missing `driver_arrived_at_restaurant` telemetry gap. | **100% Executed (33 outputs, 0 errors)** |
-| [`FlashEats_Class6_Student.ipynb`](FlashEats_Class6_Student.ipynb) | Multi-system data profiling, primary/foreign key referential integrity checks, chronology assertions, business-rule validation, and assessing metric sensitivity across late delivery definitions. | **100% Executed (20 outputs, 0 errors)** |
-| [`FlashEats_Class7_Challenge.ipynb`](FlashEats_Class7_Challenge.ipynb) | Order lifecycle reconstruction across 4 systems, canonical data modeling, building interaction &rarr; intervention &rarr; outcome tables, and linking driver metrics to the North Star SLA KPI. | **100% Executed (26 outputs, 0 errors)** |
+| [**`FlashEats_Class5_Student.ipynb`**](in-class-assignments/FlashEats_Class5_Student.ipynb) | Data retrieval, SQLite extraction, API pagination with cursors, saving immutable bronze raw JSON pages, and proving missing `driver_arrived_at_restaurant` telemetry gap. | **100% Executed (33 outputs, 0 errors)** |
+| [**`FlashEats_Class6_Student.ipynb`**](in-class-assignments/FlashEats_Class6_Student.ipynb) | Multi-system data profiling, primary/foreign key referential integrity checks, chronology assertions, business-rule validation, and assessing metric sensitivity across late delivery definitions. | **100% Executed (20 outputs, 0 errors)** |
+| [**`FlashEats_Class7_Challenge.ipynb`**](in-class-assignments/FlashEats_Class7_Challenge.ipynb) | Order lifecycle reconstruction across 4 systems, canonical data modeling, building interaction &rarr; intervention &rarr; outcome tables, and linking driver metrics to the North Star SLA KPI. | **100% Executed (26 outputs, 0 errors)** |
+| [**`walkthrough.ipynb`**](in-class-assignments/walkthrough.ipynb) | Interactive step-by-step walkthrough reproducing the complete 4-source ingestion, validation, state machine modeling, and KPI marts. | **Verified** |
 
