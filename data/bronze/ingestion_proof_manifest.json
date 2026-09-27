@@ -1,6 +1,6 @@
 {
-  "batch_id": "BATCH-20260925-124126",
-  "ingested_at": "2026-09-25T12:41:26.710746Z",
+  "batch_id": "BATCH-20260927-203232",
+  "ingested_at": "2026-09-27T20:32:32.328300Z",
   "sources": {
     "sql_orders": {
       "retrieval_mode": "SQL_RDBMS_QUERY",

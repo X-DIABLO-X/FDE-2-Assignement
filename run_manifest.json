@@ -1,12 +1,12 @@
 {
-  "run_id": "FDE-RUN-20260925-124105",
+  "run_id": "FDE-RUN-20260927-200410",
   "pipeline_version": "1.0.0",
   "batch_date": "2026-09-25",
-  "started_at": "2026-09-25T12:41:05.489585Z",
+  "started_at": "2026-09-27T20:04:10.524199Z",
   "steps": {
     "step0_generation": "EXISTING_PRESERVED",
     "step1_ingest": {
-      "batch_id": "BATCH-20260925-124105",
+      "batch_id": "BATCH-20260927-200410",
       "completeness_verified": true,
       "gmv_control_total_cents": 23140685
     },
@@ -35,6 +35,6 @@
   "status": "SUCCESS",
   "quarantine_trip_warning": false,
   "errors": [],
-  "completed_at": "2026-09-25T12:41:06.712567Z",
-  "duration_seconds": 1.22
+  "completed_at": "2026-09-27T20:04:14.436781Z",
+  "duration_seconds": 3.91
 }

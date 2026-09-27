@@ -243,9 +243,15 @@ python generate_pdf.py
 │   ├── silver/                     # Calibrated, state-machine reconstructed tables
 │   ├── gold/                       # Executive KPI marts & intervention simulations
 │   └── quarantine/                 # Isolated dead-letter queue (quarantine_audit.parquet)
+├── FlashEats_Class5_Student.ipynb  # Class 5: Data Retrieval, APIs & Immutability (Solved & Executed)
+├── FlashEats_Class6_Student.ipynb  # Class 6: Data Profiling, Validation & Contracts (Solved & Executed)
+├── FlashEats_Class7_Challenge.ipynb# Class 7: Canonical Modeling & KPI Linkage (Solved & Executed)
+├── database/flasheats.db           # SQLite Classroom Operational Database
+├── api/mock_dispatch_api.py        # Mock Dispatch API Server
 ├── docs/
 │   ├── source_map.png              # Multi-source architecture diagram
 │   ├── workflow_fsm.png            # Order lifecycle state machine diagram
+│   ├── DEMO_SCRIPT.md              # 5-minute video demonstration script
 │   └── evidence_table.md           # Markdown evidence report
 ├── src/
 │   ├── generator/generate_all.py   # Synthetic multi-source generator with 5 anomalies
@@ -257,3 +263,16 @@ python generate_pdf.py
 └── tests/
     └── test_pipeline.py            # Unit & integration test suite (completeness, idempotency)
 ```
+
+---
+
+## 11. Classroom Pack & Solved Student Notebooks
+
+In addition to the production-grade pipeline, this repository contains the complete, executed, and verified solutions for the FlashEats Classroom Pack:
+
+| Notebook | Focus & FDE Concepts Covered | Execution Status |
+| :--- | :--- | :--- |
+| [`FlashEats_Class5_Student.ipynb`](FlashEats_Class5_Student.ipynb) | Data retrieval, SQLite extraction, API pagination with cursors, saving immutable bronze raw JSON pages, and proving missing `driver_arrived_at_restaurant` telemetry gap. | **100% Executed (33 outputs, 0 errors)** |
+| [`FlashEats_Class6_Student.ipynb`](FlashEats_Class6_Student.ipynb) | Multi-system data profiling, primary/foreign key referential integrity checks, chronology assertions, business-rule validation, and assessing metric sensitivity across late delivery definitions. | **100% Executed (20 outputs, 0 errors)** |
+| [`FlashEats_Class7_Challenge.ipynb`](FlashEats_Class7_Challenge.ipynb) | Order lifecycle reconstruction across 4 systems, canonical data modeling, building interaction &rarr; intervention &rarr; outcome tables, and linking driver metrics to the North Star SLA KPI. | **100% Executed (26 outputs, 0 errors)** |
+
