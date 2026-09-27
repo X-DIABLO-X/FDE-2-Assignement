@@ -271,7 +271,7 @@ python generate_pdf.py
 
 ## 11. Classroom Pack & Solved Student Notebooks
 
-In addition to the production-grade pipeline, this repository contains the complete, executed, and verified solutions for the FlashEats Classroom Pack stored in [`in-class-assignments/`](in-class-assignments/) (also mirrored in [`in-class-assiggments/`](in-class-assiggments/) for compatibility):
+In addition to the production-grade pipeline, this repository contains the complete, executed, and verified solutions for the FlashEats Classroom Pack stored in [`in-class-assignments/`](in-class-assignments/):
 
 | Notebook | Focus & FDE Concepts Covered | Execution Status |
 | :--- | :--- | :--- |

@@ -1,6 +1,10 @@
-# In-Class Notebook Assignments & Challenges
+# In-Class Notebook Assignments & Classroom Pack
 
-This directory contains the solved, executed, and verified Jupyter notebooks corresponding to the **FlashEats Classroom Pack**:
+This directory consolidates all student-facing materials, challenge notebooks, classroom manifests, and solution reproduction scripts for the **FlashEats Classroom Pack** (Classes 5, 6, and 7):
+
+---
+
+## 1. Solved & Executed Notebooks
 
 | Notebook | Course Module | Core Concepts & Deliverables | Execution Status |
 | :--- | :--- | :--- | :--- |
@@ -11,4 +15,25 @@ This directory contains the solved, executed, and verified Jupyter notebooks cor
 
 ---
 
-*Note: Both `in-class-assignments/` and `in-class-assiggments/` directories are maintained to ensure compatibility across automated test scripts, grading rubrics, and submission guidelines.*
+## 2. Classroom Documentation & Briefs
+
+- [**`README_STUDENTS.md`**](README_STUDENTS.md): Original student overview and setup instructions from the classroom pack.
+- [**`README_CLASS6.md`**](README_CLASS6.md): Class 6 briefing on data quality, contracts, and validation rules.
+- [**`README_CLASS7.md`**](README_CLASS7.md): Class 7 briefing on lifecycle modeling, metrics, and KPI linkage.
+
+---
+
+## 3. Classroom Manifests
+
+- [**`manifest.json`**](manifest.json): Initial classroom pack dataset checksums and inventory.
+- [**`manifest_class6.json`**](manifest_class6.json): Class 6 schema and table file hashes.
+- [**`manifest_class7.json`**](manifest_class7.json): Class 7 challenge data specifications.
+
+---
+
+## 4. Automation & Verification Scripts
+
+- [**`solve_class5.py`**](solve_class5.py): Automated solver and headless executor for Class 5 notebook.
+- [**`solve_class6.py`**](solve_class6.py): Automated solver and headless executor for Class 6 notebook.
+- [**`solve_class7.py`**](solve_class7.py): Automated solver and headless executor for Class 7 notebook.
+- [**`test_solve_all.py`**](test_solve_all.py): Cross-dataset verification script testing calculations across all classroom datasets.

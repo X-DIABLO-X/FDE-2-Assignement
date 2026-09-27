@@ -7,7 +7,7 @@ from pathlib import Path
 import nbformat
 from nbclient import NotebookClient
 
-nb_path = Path("FlashEats_Class5_Student.ipynb")
+nb_path = Path("FlashEats_Class5_Student.ipynb") if Path("FlashEats_Class5_Student.ipynb").exists() else Path("in-class-assignments/FlashEats_Class5_Student.ipynb")
 with open(nb_path, "r", encoding="utf-8") as f:
     nb = nbformat.read(f, as_version=4)
 

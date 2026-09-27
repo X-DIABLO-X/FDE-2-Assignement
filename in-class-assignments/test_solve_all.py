@@ -8,7 +8,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-BASE = Path(".")
+BASE = Path(".") if (Path(".") / "database" / "flasheats.db").exists() else Path("..")
 
 # 1. Database
 con = sqlite3.connect(BASE / "database" / "flasheats.db")
